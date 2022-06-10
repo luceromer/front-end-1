@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  width: 100vw;
+  height: 50vw;
+}
+
+header {
+  background-color: black;
+  padding: 1%;
+  padding-left: 3%;
+  padding-right: 3%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* CLASES POR DEFAULT */
+.flexbox {
+  display: flex;
+}
+
+.border {
+  border: 2px solid blue;
+}
+
+/* CLASES DEL HEADER */
+
+/* PIZZA + FRONT */
+
+.logo-name {
+  align-items: center;
+  font-weight: bold;
+  font-size: 24px;
+  width: 240px;
+  justify-content: space-between;
+}
+
+.pizza {
+  color: #39b24a;
+}
+
+.and {
+  color: white;
+}
+
+.front {
+  color: #fc200c;
+}
+
+/* NAVEGADOR */
+
+.nav {
+  width: 300px;
+}
+.links {
+  color: #f3f3f3;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+ul > li {
+  list-style-type: none;
+}
+
+/* MAIN */
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+  background-color: #e5e5e5;
+}
+
+/* TARJETAS INDIVIDUALES*/
+
+.card {
+  width: 490px;
+  height: 350px;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: white;
+}
+
+/* TARJETA CON IMAGEN */
+
+.envio {
+  background-image: url("../img/Delivery.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/* TITULO DE LA TARJETA */
+
+.title {
+  padding-top: -1px;
+  padding-left: 5%;
+  font-size: 24px;
+  color: #fc200c;
+  font-weight: bold;
+}
+
+.comprando {
+  color: white;
+}
+
+/* TARJETA DE TOP5 */
+
+.titulo {
+  color: #fc200c;
+  text-align: center;
+  font-size: 24px;
+}
+
+.content {
+  justify-content: space-around;
+  align-items: center;
+  padding: 5%;
+}
+
+.top5 {
+  font-weight: bold;
+}
+
+.top5 > li {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: black;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.nav-footer {
+  height: 100px;
+}
+
+.links-footer {
+  height: 100px;
+  flex-direction: column;
+  color: #f3f3f3;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+}
+
+article {
+  width: 25%; /* Es el porcentaje del contenedor padre */
+  height: 75%;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}

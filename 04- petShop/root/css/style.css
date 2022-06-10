@@ -1,0 +1,346 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/* CLASES GENERALES */
+
+.border {
+  border: 2px solid blue;
+}
+
+.flexbox {
+  display: flex;
+}
+
+/* ETIQUETAS */
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+  padding: 15px;
+}
+
+/* -------------------------------- */
+
+/* HEADER */
+
+.heading-header {
+  background-color: black;
+  color: white;
+  height: 20px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+/* Logo + "Categorías, pets, nosotros, contacto"  */
+.header-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0a83e;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+/* El Cat&Dog blanco del logo */
+.catdog {
+  color: white;
+}
+
+/* "Categorías, pets, nosotros, contacto" */
+.listlinks {
+  display: flex;
+  justify-content: end;
+  overflow: hidden;
+}
+
+/* UL */
+#patita {
+  display: flex;
+  width: 130%;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: white;
+  text-decoration: none;
+  padding: 0px;
+}
+
+/* Cada item  de la lista */
+#patita > li {
+  color: white;
+}
+
+/* Cada link de item de la lista */
+li > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*------------------------------*/
+/* Toda la sección dentro de la imagen  */
+.banner {
+  background-image: url("../img/bowl-and-pet-daities-on-green-background 1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 660px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding-right: 30px;
+}
+
+/* "Placer" + "Descuento!" + Botón */
+.banner-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #3c2313;
+}
+
+/* "Placer"  */
+.slogan {
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 30px;
+  font-weight: 400;
+  margin: 10px;
+}
+
+/* "Descuento!"  */
+.subtext {
+  font-weight: 400;
+  color: #3c2313;
+  font-size: 16px;
+  margin: 10px;
+}
+
+/* Botón de Comederos  */
+.comederos {
+  margin: 10px;
+  background-color: #f0a83e;
+  color: white;
+  font-family: inherit;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/*------------------------------*/
+
+.desta {
+  font-size: 40px;
+  margin: 0px;
+}
+/* Sección de productos destacados */
+.subtitulo-paw {
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Productos destacados */
+
+/* Comedero - Accesorios - Comida */
+.itemsbuy {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+/*------------------------------*/
+/* Tarjetas de compra */
+
+.items {
+  justify-content: center;
+}
+
+.card {
+  margin: 20px;
+  background-color: #fbfaf6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card > h4 {
+  color: #3c2313;
+  margin: 0px;
+}
+
+.card > p {
+  color: #f0a83e;
+  font-weight: bold;
+  margin: 5px;
+}
+
+/*------------------------------*/
+
+.contacto {
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+}
+
+.form {
+  flex-direction: column;
+  align-items: center;
+}
+
+.form > h3 {
+  color: #3c2313;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.formulario {
+  padding: 0px;
+  margin: 0px;
+}
+
+.pildora {
+  width: 340px;
+  font-size: 9px;
+  background-color: #3c2313;
+  color: white;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+.botones {
+  color: white;
+  border-radius: 15px;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  padding: 6px;
+}
+
+.reset {
+  background-color: #8a8787;
+}
+
+.send {
+  background-color: #f0a83e;
+}
+
+/*------------------------------*/
+
+.subscribe {
+  background-color: #f0a83e;
+  color: white;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.news {
+  align-items: center;
+  justify-content: space-around;
+  width: 320px;
+}
+
+.formulario-footer {
+  align-items: center;
+}
+
+.formulario-mail {
+  background-color: white;
+  color: #a0a0a0;
+  padding: 10px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin: 2px;
+}
+
+.formulario-suscribir {
+  padding: 8px;
+  width: 50px;
+  margin: 2px;
+}
+
+/*------------------------------*/
+
+.footing-footer {
+  background-color: #3c2313;
+  color: white;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.footing-footer > .logo-text {
+  align-items: center;
+}
+
+.footing-footer > .logo-text > h1 > .catdog {
+  color: #f0a83e;
+}
+
+.contact-us-item {
+  justify-content: flex-start;
+  margin-left: 10px;
+}
+
+.icon-avatar {
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.outer-border {
+  background-color: #786960;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  background-color: #8a8787;
+  font-size: 30px;
+  width: 85%;
+  height: 85%;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-item {
+  padding: 10px;
+}
+
+.contact-us-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.contact-us-text {
+  font-size: 10px;
+  color: #8a8787;
+}
+
+/*------------------------------*/
+
+.bottom-footer {
+  background-color: black;
+  color: white;
+  font-weight: 700;
+  font-size: 10px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+}

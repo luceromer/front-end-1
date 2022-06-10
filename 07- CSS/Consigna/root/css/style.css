@@ -1,0 +1,35 @@
+.logo {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+h2 {
+  background-color: #c4c4c4;
+  color: #005677;
+  text-transform: uppercase;
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 6px;
+}
+
+h1 {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  letter-spacing: 10px;
+}
+
+footer {
+  background-color: #005677;
+  color: white;
+  text-align: center;
+  
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}

@@ -1,0 +1,24 @@
+/* 
+Comentamos el código SIEMPRE
+*/
+
+/* SELECTOR DE ETIQUETAS
+*/
+
+/* SELECTOR DE CLASES 
+*/
+
+.logo-header {
+  width: 50px;
+  height: 100px;
+}
+
+.nav-header {
+  list-style-type: none;
+}
+
+.section-header {
+  background-image: url("https://i.pinimg.com/originals/76/15/db/7615dbf576821d3a8a550d29f3c00593.png");
+  background-size: cover;
+  background-position: center;
+}
