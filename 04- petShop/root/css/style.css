@@ -344,3 +344,31 @@ li > a {
   justify-content: center;
   align-items: center;
 }
+
+.fa-bars {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .heading-header {
+    display: none;
+  }
+
+  #patita {
+    display: none;
+  }
+
+  .fa-bars {
+    display: inline;
+    color: white;
+  }
+
+  .items {
+    flex-direction: column;
+  }
+
+  .subtitulo-paw,
+  .items {
+    padding: 20%;
+  }
+}
