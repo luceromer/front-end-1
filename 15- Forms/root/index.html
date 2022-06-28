@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <header class="">
+      <div class="upper-header"> <h6 class="">20% de descuento en todos los productos!</h6></div>
+      <div class="banner"> <img class="" src="./img/Logo.png" alt="" /> <h3 class="">Nombre tienda</h3> </div>
+      <nav class="flex">
+        <ul class="links flex">
+          <li>Contacto</li>
+          <li>Registrarme</li>
+          <li>Ingresar</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="main">
+        <section class="titulo">
+          <h3 class="">Añadí tu super!</h3>
+          <p class="">Agregá tu personaje favorito completando las opciones.</p>
+        </section>
+        <!--dentro de form se usan sólo etiquetas de form-->
+        <section class="formulario">
+          <form action="./datos/form.php" method="POST">
+            <article class="col1">
+              <div class="label-text">
+                <label for="name">*Nombre</label>
+                <input type="text" name="name" id="name" required />
+              </div>
+              <div class="label-text">
+                <label for="fecha">Fecha</label>
+                <input type="date" name="date" id="date" placeholder="dd/mm/aaaa" required />
+              </div>
+              <div class="label-text">
+                <textarea name="description" id="description" cols="30" rows="10" placeholder="Descripción"></textarea>
+              </div>
+            </article>
+
+            <article class="col2">
+              <div class="label-text">
+                <label for="especie">*Especie</label>
+                <input type="text" name="especie" id="especie" placeholder="Especie" required />
+              </div>
+              <div class="label-text">
+                <label for="pic">Agregar foto</label>
+                <input type="image" name="pic" id="pic" placeholder="Seleccionar archivo" required />
+              </div>
+              <div class="label-text">
+                <div class="poderes border">
+                  <label class="label-title" for="">Poderes</label>
+                  <label class="checkbox"><input type="checkbox" id="cbox1" value="first_checkbox" />Volar</label>
+                  <label class="checkbox"><input type="checkbox" id="cbox1" value="first_checkbox" />Superinteligencia</label>
+                  <label class="checkbox"><input type="checkbox" id="cbox1" value="first_checkbox" />Vista de rayo láser</label>
+                  <label class="checkbox"><input type="checkbox" id="cbox1" value="first_checkbox" />Billetera gorda</label>
+                </div>
+                <div class="personaje border">
+                  <label class="label-title" for="">Tipo de personaje</label>
+                  <label class="radio"><input type="radio" id="radio" value="heroe" />Héroe/Heroína</label>
+                  <label class="radio"><input type="radio" id="radio" value="villano" />Villano/Villana</label>
+                </div>
+              </div>
+            </article>
+          </form>
+        </section>
+
+        <section class="btn-sec">
+          <button class="button">Añadir</button>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <section class="footer">
+        <h6>Todos los derechos reservados a FRONT END 1</h6>
+      </section>
+    </footer>
+  </body>
+</html>
