@@ -337,14 +337,6 @@ input:invalid {
   color: red;
 }
 
-input:invalid:after {
-  content: "Please insert a valid email";
-  color: red;
-  font-size: 0.7rem;
-  font-style: italic;
-  padding: 0 20px;
-}
-
 /* navs */
 
 .footer-nav {
@@ -388,7 +380,6 @@ li {
 }
 
 .icons > i {
-  /* width: 30px; */
   color: var(--gris-claro);
   font-size: 1.8rem;
 }
@@ -470,14 +461,13 @@ li {
   .header-main {
     flex-direction: row-reverse;
     justify-content: space-between;
-
     padding: 0;
   }
 
   /* main*/
 
   .main-title {
-    width: 45%;
+    width: 50%;
     flex-direction: column;
     align-items: flex-start;
   }
@@ -485,12 +475,12 @@ li {
   /* gráficos */
 
   .charts {
-    width: 70%;
+    width: 80%;
   }
 
   .charts-section {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     padding: 0;
     margin: 0;
@@ -512,7 +502,17 @@ li {
     margin-bottom: 50px;
   }
 
+  .title-container {
+    padding: 0 20px 0 0;
+    margin: 0;
+  }
+
   .smaller-title {
+    text-align: left;
+  }
+
+  .smallest-title {
+    font-size: 1.9rem;
     text-align: center;
   }
 
@@ -589,12 +589,23 @@ li {
     padding: 15px 100px 15px 20px;
   }
 
+  /* for the record. intenté hacer "input:invalid::after" pero no me anduvo.
+decidí entregarlo con este after sencillo porque me pareció que era lo más
+decente.*/
+
+  .input-div::after {
+    content: "Please insert a valid email";
+    color: red;
+    font-size: 0.7rem;
+    font-style: italic;
+    padding: 0 20px;
+  }
+
   .section-footer {
     flex-direction: row-reverse;
     justify-content: space-around;
-    /* align-items: flex-start; */
     width: 87%;
-
+    gap: 30px;
     margin: 20px 0;
   }
 
